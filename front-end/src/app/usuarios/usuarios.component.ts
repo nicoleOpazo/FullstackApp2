@@ -37,9 +37,9 @@ export class UsuariosComponent implements OnInit {
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Eliminar',
-      cancelButtonText: 'Cancelar!',
-      confirmButtonClass: 'btn btn-success',
-      cancelButtonClass: 'btn btn-danger',
+      cancelButtonText: 'Cancelar',
+      confirmButtonClass: 'btn btn-danger',
+      cancelButtonClass: 'btn btn-success',
       buttonsStyling: false,
       reverseButtons: true
     }).then((result) => {

@@ -17,9 +17,25 @@
             </div>
 
             <div class="form-group row">
+                <label for="activo" class="col-form-label col-sm-2">Activo</label>
+                <div class="col-sm-6">
+                    <input type="checkbox" class="form-check-input" [(ngModel)]="usuario.activo" name="activo">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="fechaCreacion" class="col-form-label col-sm-2">Fecha de Creación</label>
+                <div class="col-sm-6">
+                    <input type="datetime-local" class="form-control" [(ngModel)]="usuario.fechaCreacion" name="fechaCreacion">
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
                 <div class="col-sm-6">
                     <button class="btn btn-primary" role="button" (click)="create()"
-                        *ngIf="!usuario.id; else elseBlock">Crear</button>
+                        *ngIf="!usuario.id; else elseBlock">Guardar</button>
 
                     <ng-template #elseBlock>
                         <button class="btn btn-primary" role="button" (click)="update()">Editar</button>

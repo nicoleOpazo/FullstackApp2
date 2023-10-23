@@ -3,5 +3,5 @@ export class Usuario {
     nombre: string;
     edad: number;
     activo: boolean;
-    fechaCreacion: Date;
+    fechaCreacion: string;
 }
