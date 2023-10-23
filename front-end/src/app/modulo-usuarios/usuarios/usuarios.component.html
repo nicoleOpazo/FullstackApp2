@@ -8,11 +8,14 @@
     </button>
   </div>
 
-  <table class="table">
+  <div *ngIf="usuarios?.length == 0">
+    Aún no existen usuarios registrados
+  </div>
+  <table class="table" *ngIf="usuarios?.length>0">
     <thead>
       <tr>
         <th class="encabezado" style="border-top-left-radius: 7px;">ID</th>
-        <th class="encabezado">Nombre</th>
+        <th class="encabezado">Nombre de Usuario</th>
         <th class="encabezado">Edad</th>
         <th class="encabezado">Activo</th>
         <th class="encabezado">Fecha de Creación</th>
