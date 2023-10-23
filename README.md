@@ -4,10 +4,8 @@ Esta es una aplicación web Full Stack que permite gestionar usuarios y carritos
 
 ## Características
 
-1. **Inicio **: Página de inicio de la aplicación. Proporciona una descripción general de la aplicación y sus características.
-
+1. **Inicio**: Página de inicio de la aplicación. Proporciona una descripción general de la aplicación y sus características.
 2. **Registros**: Muestra los usuarios registrados. Ofrece una interfaz de usuario para visualizar los datos de la entidad "Usuarios" a través de la API REST.
-
 3. **Acerca de**: Indica los datos del autor de este proyecto.
 
 ## Configuración de Rutas
