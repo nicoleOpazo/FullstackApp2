@@ -1,0 +1,8 @@
+.navbar.navbar-expand-lg {
+    background: transparent;
+    color: white;
+}
+
+.nav-link, .navbar-brand {
+    color: rgb(214, 221, 217);
+}

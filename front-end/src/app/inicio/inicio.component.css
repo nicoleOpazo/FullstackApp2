@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+#inicio {
+    /*background-color: rgb(38, 40, 53);*/
+    /* color: rgb(214, 221, 217); */
+    color: black;
+    margin: 3%;
+    font-family: 'Comfortaa', sans-serif;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 3%;
+    /* background: linear-gradient(to top left, rgb(206,187,177), rgb(51,137,158)); */
+    background-color: white;
+    border-radius: 30px;
+}
+
+#inicio .bienvenida {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+#inicio h1 {
+    font-weight: 600;
+}
+
+#inicio .bienvenida img {
+    width: 250px;
+}

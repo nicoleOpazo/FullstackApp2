@@ -1,0 +1,40 @@
+<div id="usuarios">
+
+  <h2>{{title}}</h2>
+
+  <div class="my-2 text-left">
+    <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/usuarios/form']">
+      Crear Usuario
+    </button>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="encabezado" style="border-top-left-radius: 7px;">ID</th>
+        <th class="encabezado">Nombre</th>
+        <th class="encabezado">Edad</th>
+        <th class="encabezado">Activo</th>
+        <th class="encabezado" style="border-top-right-radius: 7px;">Fecha de Creación</th>
+        <th>editar</th>
+        <th>eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.nombre }}</td>
+        <td>{{ usuario.edad }}</td>
+        <td>{{ usuario.activo }}</td>
+        <td >{{ usuario.fechaCreacion }}</td>
+        <td>
+          <button type="button" name="editar" [routerLink]="['/usuarios/form', usuario.id]" class="btn btn-primary btn-sm">editar</button>
+        </td>
+        <td>
+          <button type="button" name="eliminar" (click)='delete(usuario)' class="btn btn-danger btn-sm">eliminar</button>
+        </td>
+      </tr >
+    </tbody>
+  </table>
+
+</div>
